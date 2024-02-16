@@ -1,6 +1,7 @@
 
 import java.util.Scanner;
 
+// Intended to calculate the number of gallons of water held within a well using user inputs for radius and depth of the well. 
 public class GroceWaterwell {
 
     public static void main(String[] args) {
@@ -18,7 +19,8 @@ public class GroceWaterwell {
         depth = userInput.nextFloat();
         double volume;
         double gallons;
-        // Calls the functions to calculate the volume and convert it to gallons.
+
+        
         volume = calculateVolume(radius, depth);
         gallons = convertToGallons(volume);
 
