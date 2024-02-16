@@ -73,6 +73,14 @@
             border: 0;
         }
     </style>
+    <script>
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Tab') {
+                var iframe = document.getElementById('webgl-iframe');
+                iframe.style.display = 'none';
+            }
+        });
+    </script>
 </head>
 <body>
     <header>
@@ -113,7 +121,7 @@
             <p>Designed in Unity with C#, custom assets (except the jetpack) and built for WebGL.</p>
             <a href="https://drstrangegl0ve.github.io/games.github.io-jetpack-geometry/">Link to Jetpack Geometry</a>
             <div class = "responsive-iframe-container">
-                <iframe src="https://drstrangegl0ve.github.io/games.github.io-jetpack-geometry/" width="900" height="600"></iframe>
+                <iframe id = "webgl-iframe" src="https://drstrangegl0ve.github.io/games.github.io-jetpack-geometry/" width="900" height="600"></iframe>
             </div>
             <h2>MOBA practice</h2>
             <p>Trying to create LoL-style movement, pathing, and enemy AI.</p>
