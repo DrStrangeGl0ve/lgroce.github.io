@@ -14,7 +14,7 @@ int cStudents;
 int dStudents;
 int fStudents;
 
-// int LetterGrade(int a, int b, int c, int d, int f);
+
 int LetterGrade();
 
 int main() {
@@ -24,8 +24,7 @@ int main() {
   dStudents = 0;
   fStudents = 0;
 
-  // Repeatedly asks for student information until no more students are left.
-  // Adds student information to two parallel arrays.
+
 
   for (int i = 0; i < numberOfStudents; i++) {
     studentID = 0;
@@ -70,8 +69,7 @@ int main() {
       break;
     }
   }
-  // Runs function to check array and add up all of the letter grades. Then
-  // prints the final counts.
+
   LetterGrade();
 }
 
