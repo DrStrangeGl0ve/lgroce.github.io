@@ -4,7 +4,7 @@
 
 int main() {
 
-  // Declaring variables for all mpg calculations.
+
   float gallonsUsed;
   float milesDriven;
   float milesPerGallon;
@@ -12,15 +12,8 @@ int main() {
   float totalMeasuredTanks = 0;
   float averageMilesPerGallon;
 
-  /*This time, I've removed one of the if-statements and removed the else
-  statement entirely. I couldn't figure out a way to remove all of the
-  if-statements completely, but I've cut it down to one. The
-  averageMilesPerGallon is sitting outside of the while loop, and the program
-  accepts unlimited vehicles to check.
-*/
 
-  // Creating a while loop to calculate and store individual milesPerGallon
-  // until -1 is entered.
+
   printf("Enter the gallons used (-1 to end): \n");
   scanf("%f", &gallonsUsed);
 
@@ -33,12 +26,11 @@ int main() {
     combinedMilesPerGallon += milesPerGallon;
     totalMeasuredTanks++;
 
-    // include sentinel checker at END of while loop.
     printf("Enter the gallons used (-1 to end): \n");
     scanf("%f", &gallonsUsed);
   }
 
-  // Calculating and outputting the total average miles per gallon for all cars.
+ 
   averageMilesPerGallon = combinedMilesPerGallon / totalMeasuredTanks;
   printf("Average miles-per-gallon for all tanks is %.2f \n",
          averageMilesPerGallon);
