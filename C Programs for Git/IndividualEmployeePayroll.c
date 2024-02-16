@@ -1,33 +1,27 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Declaring function to calculate payroll for an individual employee.
+
 int employeePayrollInfo();
 
 int main() {
-  // Declaring number of employees. Will loop the function while number of
-  // Employees is > 0.
+
   int numberOfEmployees;
 
   printf("How many employees do you have? \n");
   // Get initial value to determine number of loops.
   scanf("%i", &numberOfEmployees);
 
-  /* Repeatedly call function and decrement number of employees
-  until it reaches 0 */
-
   do {
     employeePayrollInfo();
     numberOfEmployees--;
   } while (numberOfEmployees > 0);
 
-  // Exit main method by returning int 0.
   return 0;
 }
 
-// Initializing function to calculate payroll for employee.
+
 int employeePayrollInfo() {
-  // Declare local variables for employee data and pay information.
   int employeeIDnumber;
   float hourlyPayRate;
   float weeklyHoursWorked;
@@ -37,7 +31,7 @@ int employeePayrollInfo() {
   float grossPay;
   float netPay;
   float taxWithheld;
-  // Declare constant variable for tax rate.
+  
   const float taxRate = .03525;
 
   // Request user inputs to initialize variables.
@@ -67,6 +61,5 @@ int employeePayrollInfo() {
          "Withheld: $%.2f \n Net "
          "Pay: $%.2f \n",
          employeeIDnumber, weeklyHoursWorked, grossPay, taxWithheld, netPay);
-  // Ends the function by returning int 0.
   return 0;
 }
