@@ -1,14 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
-// Declaring array of 7 items.
+
 int valueCollection[7];
-// Declaring variable to be searched.
 int searchedValue;
-// Declaring the length of the array.
 int arraySize = 7;
-// Creating a value that switches to indicate if a match has been found.
 int containsValue = 0;
-// Declaring a function to search the array for a user value.
+
 int FindValue();
 
 int main() {
@@ -26,7 +23,7 @@ int main() {
   return 0;
 }
 
-// Initializing search function;
+/
 int FindValue() {
   // Prompting user to give us a value to search.
   printf("Type a number to find in the array: \n");
@@ -38,7 +35,6 @@ int FindValue() {
     if (valueCollection[i] == searchedValue) {
       containsValue = 1;
       printf("I found your value in index %d \n", i);
-      break;
     }
   }
   // If we didn't find a value, the containsValue switch doesn't change,
@@ -46,6 +42,5 @@ int FindValue() {
   if (containsValue == 0) {
     printf("Your value was not found in this array.\n");
   }
-  // Ends function with return value.
   return 0;
 }
