@@ -2,21 +2,9 @@
 #include <stdlib.h>
 
 
-//I've been including stdlib.h because it allows me to use system functions(like pause) and have access to other standard library functionality.
 
 
-
-/*
-I really think I must have done this the long way around. I know that it probably would have been faster to hard-code the prices into the program,
-but I feel like I would prefer to be able to change them anytime. 
-
-I spent a ton of time formatting my print lines to get a pretty decent looking reciept, but if you calculate values over a certain point, they end up moving out of alignment. 
-I need to figure out a better way to display tables.
-
-Not really enjoying the frustration of concatenating my integers and floats into strings with C. This is much easier with C# and swift. 
-While working on this, I learned a lot about how you can output your data in different formats. For example, I was able to limit my floats to the hundredth place
-to imitate dollars by using %.2f. Pretty cool.
-*/
+//Intended to calculate the total cost of a customer bill depending on the amount of specific items purchased. Includes sales tax for Texas.
 
  
 
