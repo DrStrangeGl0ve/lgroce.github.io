@@ -57,6 +57,21 @@
             text-decoration: none;
             color: coral;
         }
+        .responsive-iframe-container {
+            position: relative;
+            overflow: hidden;
+            padding-top: 56.25%; /* for 16:9 aspect ratio */
+            /* padding-top: 75%; for 4:3 aspect ratio */
+        }
+
+        .responsive-iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
     </style>
 </head>
 <body>
@@ -102,7 +117,9 @@
             <p>Designed in Unity with C#, custom assets, and built for WebGL.</p>
             <a href="https://drstrangegl0ve.github.io/games.github.io-MobaMovement/">Link to Moba Movement</a>
             <br>
+            <div class = "responsive-iframe-container">
             <iframe src="https://drstrangegl0ve.github.io/games.github.io-MobaMovement/" width="900" height="600"></iframe>
+            </div>
             <h2>Clippies</h2>
             <video controls width="250">
               
