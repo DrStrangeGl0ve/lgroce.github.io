@@ -72,16 +72,12 @@
             height: 100%;
             border: 0;
         }
+
+        .project {
+            margin-top: 20px;
+            margin-bottom: 20px; /* Adjust the gap between the href and iframe */
+        }
     </style>
-    <script>
-        document.addEventListener('keydown', function(event) {
-            if (event.key === 'Tab') {
-                var iframe = document.getElementById('webgl-iframe');
-                iframe.style.display = 'none';
-                iframe.style.height = '0';
-            }
-        });
-    </script>
 </head>
 <body>
     <header>
@@ -99,6 +95,8 @@
         <h2>About Me</h2>
         <p>High School Game Design & Programming Teacher</p>
         <br>
+    </section>
+    <section id="skills">
         <h2>Skills</h2>
         <ul>
             <li><a href="https://github.com/DrStrangeGl0ve/lgroce.github.io/tree/3f9284cb1d39620806792f2b7887ba3e853875d4/MobaMovementScripts"> C# & Unity</a></li>
@@ -119,15 +117,19 @@
             <p>A quick prototype of different type of movement system. The player can burst with the jetpack, but cannot steer. The world rotates around the character's model.</p>
             <p>Designed in Unity with C#, custom assets (except the jetpack) and built for WebGL.</p>
             <a href="https://drstrangegl0ve.github.io/games.github.io-jetpack-geometry/">Link to Jetpack Geometry</a>
-            <div class = "responsive-iframe-container">
-                <iframe id = "webgl-iframe" src="https://drstrangegl0ve.github.io/games.github.io-jetpack-geometry/" /*width="900" height="600"*/></iframe>
+            <!--<div class = "responsive-iframe-container">
+                <iframe id = "webgl-iframe" src="https://drstrangegl0ve.github.io/games.github.io-jetpack-geometry/"></iframe>
             </div>
-            <h2>MOBA practice</h2>
+        -->
+           <h2>MOBA practice</h2>
             <p>Trying to create LoL-style movement, pathing, and enemy AI.</p>
             <p>Designed in Unity with C#, custom assets, and built for WebGL.</p>
             <a href="https://drstrangegl0ve.github.io/games.github.io-MobaMovement/">Link to Moba Movement</a>
-            
-    
+            <!--
+            <div class = "responsive-iframe-container">
+                <iframe id = "webgl-iframe" src="https://drstrangegl0ve.github.io/games.github.io-MobaMovement/"></iframe>
+            </div>
+            -->
             
         </div>
         <br>
